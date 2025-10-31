@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./app.css" />
-    <title>3D Dice</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="dice">
-        <div class="front face">front</div>
-        <div class="back face">back</div>
-        <div class="left face">left</div>
-        <div class="right face">right</div>
-        <div class="top face">top</div>
-        <div class="bottom face">bottom</div>
-      </div>
-    </div>
-    
-    <input type="button" id="btnId" onclick="consolee()" value="Back Visibility Off"></input>
-    <script src="./app.js"></script>
-  </body>
+<html>
+<head>
+  <title>Simple Quiz</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background-color: bisque;}
+    .quiz-box { max-width: 400px; margin: auto; border: 1px solid #ddd; padding: 20px; border-radius: 10px; background-color: rgb(213, 131, 8) }
+    .question { font-size: 18px; margin-bottom: 10px; }
+    .option { margin: 5px 0; }
+    button { margin-top: 10px; padding: 10px; border-radius: 15%; background-color: rgb(187, 231, 231);}
+  </style>
+</head>
+<body>
+  <div id="quiz" class="quiz-box">
+    <div id="question" class="question"></div>
+    <div id="options"></div>
+    <button id="button" onclick="nextQuestion()" style="background-color:rgb(221, 248, 12); border: solid; font-weight: bold;">Next</button>
+    <div id="result" style="margin-top: 20px; font-weight: bold;"></div>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
 </html>
